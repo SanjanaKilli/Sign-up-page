@@ -1,72 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>V-Tie</title>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
-</head>
-<body>
-    
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
     <!-- Navbar-->
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light py-3">
-            <div class="container">
-                <!-- Navbar Brand -->
-                <a href="https://sanjana-04.github.io/First-page/" class="navbar-brand">
-                    <img src="logo.jpeg" alt="logo" width="150">
-                </a>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <!-- Navbar Brand -->
+        <a href="https://sanjana-04.github.io/First-page/" class="navbar-brand"
+          ><img src="logo.jpeg" alt="logo" width="125"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://sanjana-04.github.io/First-page/"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://sanjana-04.github.io/First-page/#about">About-Us</a>
+            </li>
+            
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                href="https://sanjana-04.github.io/Sign-up-page/"
+                >Sign-Up<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://sanjana-04.github.io/Sign-in-page/"
+                >Sign-In</a
+              >
+            </li>
+            <li class="nav-item dropdown"></li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    
-    
-    <div class="container">
-        <div class="row py-5 mt-4 align-items-center">
-            <div class="col-md-7 pr-lg-5 mb-5 mb-md-0">
-                <img src="Sign-up.png" alt="" class="img-fluid mb-3 d-md-block" style="height: 120%;width: 120%;">
-                <h1 style="margin-top: 10%;">Create an Account.</h1>
-                <p class="font-italic text-muted mb-0">Join the medical community.</p>
-                
-            </div>
-    
-            <!-- Registeration Form -->
-            <div class="col-md-7 col-lg-5 ml-auto">
-                <form action="#">
-                    <div class="row">
-    
-                        <!-- First Name -->
-                        <div class="input-group col-lg-6 mb-4">
-        
-                            <input id="firstName" type="text" name="firstname" placeholder="First Name" class="form-control bg-white border-md">
-                        </div>
-    
-                        <!-- Last Name -->
-                        <div class="input-group col-lg-6 mb-4">
-                            <input id="lastName" type="text" name="lastname" placeholder="Last Name" class="form-control bg-white border-md">
-                        </div>
-    
-                        <!-- Email Address -->
-                        <div class="input-group col-lg-12 mb-4">
-                            <input id="email" type="email" name="email" placeholder="Email Address" class="form-control bg-white border-md">
-                        </div>
-                        
-                        <!-- Gender -->
-                        <div class="input-group col-lg-6 mb-4">
-                            <select id="gender" name="gender" class="form-control custom-select bg-white border-md" style="height: 53.59px;">
-                                <option value="">Male</option>
-                                <option value="">Female</option>
-                                <option value="">Others</option>
-                            </select>
-                        </div>
 
-                        <!-- Job -->
-                        <div class="input-group col-lg-6 mb-4">
+    <div class="container">
+      <div class="row py-5 mt-4 align-items-center">
+        <div class="col-md-7 pr-lg-5 mb-5 mb-md-0">
+          <img
+            src="Sign-up.png"
+            alt=""
+            class="img-fluid mb-3 d-md-block"
+            style="height: 120%; width: 120%"
+          />
+          <h1 style="margin-top: 10%">Create an Account.</h1>
+          <p class="font-italic text-muted mb-0">Join the medical community.</p>
+        </div>
+
+        <!-- Registeration Form -->
+        <div class="col-md-7 col-lg-5 ml-auto">
+          <form action="#">
+            <div class="row">
+              <!-- First Name -->
+              <div class="input-group col-lg-12 mb-4">
+                <input
+                  id="firstName"
+                  type="text"
+                  name="firstname"
+                  placeholder="First Name"
+                  class="form-control bg-white border-md"
+                />
+              </div>
+
+              <!-- Last Name -->
+              <div class="input-group col-lg-6 mb-4">
+                <input
+                  id="lastName"
+                  type="text"
+                  name="lastname"
+                  placeholder="Last Name"
+                  class="form-control bg-white border-md"
+                />
+              </div>
+
+              <!-- Middle Name -->
+              <div class="input-group col-lg-6 mb-4">
+                <input
+                  id="middleName"
+                  type="text"
+                  name="middlename"
+                  placeholder="Middle Name"
+                  class="form-control bg-white border-md"
+                />
+              </div>
+
+              <!-- Email Address -->
+              <div class="input-group col-lg-12 mb-4">
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  class="form-control bg-white border-md"
+                />
+              </div>
+
+              <!-- Gender -->
+              <div class="input-group col-lg-6 mb-4">
+                <select
+                  id="gender"
+                  name="gender"
+                  class="form-control custom-select bg-white border-md"
+                  style="height: 53.59px"
+                >
+                  <option value="">Gender</option>
+                  <option value="">Male</option>
+                  <option value="">Female</option>
+                  <option value="">Others</option>
+                </select>
+              </div>
+
+              <!-- Age -->
+              <div class="input-group col-lg-6 mb-4">
+                <input
+                  id="Age"
+                  type="text"
+                  name="age"
+                  placeholder="Age"
+                  class="form-control bg-white border-md"
+                />
+              </div>
+
+              <!-- Job -->
+              <!-- <div class="input-group col-lg-6 mb-4">
                             <select id="job" name="jobtitle" class="form-control custom-select bg-white border-md" style="height: 53.59px; font-size: 1.5rem; text-align: center;">
                                 <option value="">Profession</option>
                                 <option value="">Doctor</option>
@@ -74,73 +163,221 @@
                                 <option value="">Student</option>
                                 <option value="">Others</option>
                             </select>
-                        </div>
-    
-    
-                        <!-- Phone Number -->
-                        <div class="input-group col-lg-12 mb-4">
-                            <select id="countryCode" name="countryCode" style="max-width: 80px" class="custom-select form-control bg-white border-md h-100 font-weight-bold text-muted">
-                                <option value="">+91</option>
-                                <option value="">+10</option>
-                                <option value="">+15</option>
-                                <option value="">+18</option>
-                            </select>
-                            <input id="phoneNumber" type="tel" name="phone" placeholder="Phone Number" class="form-control bg-white border-md pl-3">
-                        </div>
+                        </div> -->
 
-                        <!-- Address -->
-                        <div class="input-group col-lg-12 mb-4">
-                            <input id="Address" type="text" name="Address" placeholder="Address" class="form-control bg-white border-md">
-                        </div>
-    
-
-                        <!-- Password -->
-                        <div class="input-group col-lg-6 mb-4">
-                            <input id="password" type="password" name="password" placeholder="Password" class="form-control bg-white border-md">
-                        </div>
-    
-                        <!-- Confirm Password -->
-                        <div class="input-group col-lg-6 mb-4">
-                            <input id="passwordConfirmation" type="text" name="passwordConfirmation" placeholder="Confirm Password" class="form-control bg-white border-md">
-                        </div>
-    
-                        <!-- Submit Button -->
-                        <div class="form-group col-lg-12 mx-auto mb-0">
-                            <a href="#" class="btn btn-primary btn-block py-2">
-                                <span class="font-weight-bold">Create your account</span>
-                            </a>
-                        </div>
-    
-                        <!-- Divider Text -->
-                        <div class="form-group col-lg-12 mx-auto d-flex align-items-center my-4">
-                            <div class="border-bottom w-100 ml-5"></div>
-                            <span class="px-2 small text-muted font-weight-bold text-muted">OR</span>
-                            <div class="border-bottom w-100 mr-5"></div>
-                        </div>
-    
-                        <!-- Social Login -->
-                        <div class="form-group col-lg-12 mx-auto">
-                            <a href="#" class="btn btn-primary btn-block py-2 btn-facebook">
-                                <i class="fa fa-facebook-f mr-2"></i>
-                                <span class="font-weight-bold">Continue with Facebook</span>
-                            </a>
-                            <a href="#" class="btn btn-primary btn-block py-2 btn-twitter">
-                                <i class="fa fa-twitter mr-2"></i>
-                                <span class="font-weight-bold">Continue with Twitter</span>
-                            </a>
-                        </div>
-    
-                        <!-- Already Registered -->
-                        <div class="text-center w-100">
-                            <p class="text-muted font-weight-bold">Already Registered? <a href="https://sanjana-04.github.io/Sign-in-page/" class="text-primary ml-2">Sign-in</a></p>
-                        </div>
-    
+              <!-- Job -->
+              <div class="job input-group col-lg-12 mb-4">
+                <input
+                  type="radio"
+                  name="Profession"
+                  id="dot-1"
+                  onclick="doc()"
+                />
+                <input
+                  type="radio"
+                  name="Profession"
+                  id="dot-2"
+                  onclick="stu()"
+                />
+                <input
+                  type="radio"
+                  name="Profession"
+                  id="dot-3"
+                  onclick="other()"
+                />
+                <div class="spec">
+                  <div style="margin-left: 30px" ;>
+                    <label for="dot-1">
+                      <span class="dot one form-check-input"></span>
+                      <span class="Profession">Doctor</span>
+                    </label>
+                    <div id="doc" style="display: none">
+                      <input
+                        type="text"
+                        placeholder="Registration number"
+                        class="bg-white border-md"
+                        style="border-color: rgba(204, 204, 204, 0.192);"
+                        required
+                      />
+                      <input
+                        type="text"
+                        placeholder="Registration number"
+                        class="bg-white border-md"
+                        style="border-color: rgba(204, 204, 204, 0.192);"
+                        required
+                      />
+                      <input type="text" placeholder="Hospital Name" class="bg-white border-md" style="border-color: rgba(204, 204, 204, 0.192);" required />
                     </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    
+                  </div>
+                  <div style="padding-left: 30px" ;>
+                    <label for="dot-2">
+                      <span class="dot two form-check-input"></span>
+                      <span class="Profession">Student</span>
+                    </label>
+                    <div id="stu" style="display: none">
+                      <input
+                        type="text"
+                        placeholder="Aadhaar number"
+                        class="bg-white border-md"
+                        style="border-color: rgba(204, 204, 204, 0.192);"
+                        required
+                      />
+                      <input type="text" placeholder="College name" class="bg-white border-md" style="border-color: rgba(204, 204, 204, 0.192);" required />
+                      <input
+                        type="text"
+                        placeholder="College Id number"
+                        class="bg-white border-md"
+                        style="border-color: rgba(204, 204, 204, 0.192);"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div style="padding-left: 30px" ;>
+                    <label for="dot-3">
+                      <span class="dot three form-check-input"></span>
+                      <span class="Profession">Others</span>
+                    </label>
+                    <div id="other" style="display: none">
+                      <input
+                        type="text"
+                        placeholder="Aadhaar number"
+                        class="bg-white border-md"
+                        style="border-color: rgba(204, 204, 204, 0.192);"
+                        required
+                      />
+                      <input type="text" placeholder="Occupation" class="bg-white border-md" style="border-color: rgba(204, 204, 204, 0.192);" required />
+                      <input type="text" placeholder="Location" class="bg-white border-md" style="border-color: rgba(204, 204, 204, 0.192);" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-</body>
+              <!-- Phone Number -->
+              <div class="input-group col-lg-12 mb-4">
+                <select
+                  id="countryCode"
+                  name="countryCode"
+                  style="max-width: 80px"
+                  class="
+                    custom-select
+                    form-control
+                    bg-white
+                    border-md
+                    h-100
+                    font-weight-bold
+                    text-muted
+                  "
+                >
+                  <option value="">+91</option>
+                  <option value="">+10</option>
+                  <option value="">+15</option>
+                  <option value="">+18</option>
+                </select>
+                <input
+                  id="phoneNumber"
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone Number"
+                  class="form-control bg-white border-md pl-3"
+                />
+              </div>
+
+              <!-- Present Address -->
+              <div class="input-group col-lg-12 mb-4">
+                <input
+                  id="PresentAddress"
+                  type="text"
+                  name="presentAddress"
+                  placeholder="Present Address"
+                  class="form-control bg-white border-md"
+                />
+              </div>
+
+              <!-- Permanent Address -->
+              <div class="input-group col-lg-12 mb-4">
+                <input
+                  id="PermanentAddress"
+                  type="text"
+                  name="permanentAddress"
+                  placeholder="Permanent Address"
+                  class="form-control bg-white border-md"
+                />
+              </div>
+
+              <!-- Password -->
+              <div class="input-group col-lg-6 mb-4">
+                <input
+                  id="password"
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  class="form-control bg-white border-md"
+                />
+              </div>
+
+              <!-- Confirm Password -->
+              <div class="input-group col-lg-6 mb-4">
+                <input
+                  id="passwordConfirmation"
+                  type="text"
+                  name="passwordConfirmation"
+                  placeholder="Confirm Password"
+                  class="form-control bg-white border-md"
+                />
+              </div>
+
+              <!-- Submit Button -->
+              <div class="form-group col-lg-12 mx-auto mb-0">
+                <a href="#" class="btn btn-primary btn-block py-2">
+                  <span class="font-weight-bold">Create your account</span>
+                </a>
+              </div>
+
+              <!-- Divider Text -->
+              <div
+                class="
+                  form-group
+                  col-lg-12
+                  mx-auto
+                  d-flex
+                  align-items-center
+                  my-4
+                "
+              >
+                <div class="border-bottom w-100 ml-5"></div>
+                <span class="px-2 small text-muted font-weight-bold text-muted"
+                  >OR</span
+                >
+                <div class="border-bottom w-100 mr-5"></div>
+              </div>
+
+              <!-- Social Login -->
+              <div class="form-group col-lg-12 mx-auto">
+                <a href="#" class="btn btn-primary btn-block py-2 btn-facebook">
+                  <i class="fa fa-facebook-f mr-2"></i>
+                  <span class="font-weight-bold">Continue with Facebook</span>
+                </a>
+                <a href="#" class="btn btn-primary btn-block py-2 btn-twitter">
+                  <i class="fa fa-twitter mr-2"></i>
+                  <span class="font-weight-bold">Continue with Twitter</span>
+                </a>
+              </div>
+
+              <!-- Already Registered -->
+              <div class="text-center w-100">
+                <p class="text-muted font-weight-bold">
+                  Already Registered?
+                  <a
+                    href="https://sanjana-04.github.io/Sign-in-page/"
+                    class="text-primary ml-2"
+                    >Sign-in</a
+                  >
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
